@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+body, p, h2, h3, h4 {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  border: 0;
+  outline: none;  /*remove the border when the input focus */
+}
+
+.slider-decorator-0 {
+  bottom: 7px !important;
+}
+
+.am-carousel-wrap {
+  font-size: 18px;
+  color: #000;
+  background: none;
+  text-align: center;
+  zoom: 1;
+  width: 100%;
+  .am-carousel-wrap-dot {
+    display: inline-block;
+    zoom: 1;
+    &>span {
+      display: block;
+      width: 10px;
+      height: 4px;
+      margin: 0 3px;
+      background: #fff;
+      opacity: 0.5;
+    }
+    &.am-carousel-wrap-dot-active>span {
+      opacity: 1;
+    }
+  }
+}
